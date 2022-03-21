@@ -1,0 +1,16 @@
+<div class="container" [ngClass]="{container_gray: modalWindow}">
+
+    <div *ngIf="!modalWindow" class="galery">
+        <div class="photo" *ngFor="let item of listOfPhoto">
+            <img src={{item.url}} id={{item.id}} (click)="openPhoto(item.id)" alt="">
+        </div>
+    </div> 
+    
+    <modal-window (closePhoto)="closePhoto($event)"
+        [idImg] = "idImg" *ngIf="modalWindow">
+    </modal-window>
+
+</div>
+
+
+

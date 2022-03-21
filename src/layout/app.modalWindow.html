@@ -1,0 +1,31 @@
+<div class="photo_coments">
+    <div class="conteiner">
+        <div class="div_close">
+            <button class="close" (click)="close()">
+            </button>  
+        </div>
+        <div class="div_photo">
+            <img src={{data.url}} alt="">
+        </div>
+        <div class="div_comment"> 
+            <div *ngFor="let item of data.comments" class="comment">
+                <div>
+                    {{item.text}}
+                </div>
+                <div class="date">
+                    {{item.date}}
+                </div>          
+            </div>
+        </div>
+        <div class="leaveСomment">
+            <div>
+                <textarea name="" id="" cols="30" rows="7" 
+                    placeholder="Оставьте комментарий"
+                    [(ngModel)]="comment"></textarea>
+                <button (click)="send()">Оставить комментарий</button>
+                <button (click)="delete()">Удалить</button>
+            </div>
+        </div> 
+    </div>
+</div>
+       

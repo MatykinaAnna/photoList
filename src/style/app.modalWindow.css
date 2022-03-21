@@ -1,0 +1,50 @@
+.photo_coments{
+    background-color: white;
+    width: 105%;
+    padding: 5px;
+    border-radius: 10px;
+}
+.div_close{
+    display: flex;
+    justify-content: end;
+}
+.div_photo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.div_comment{
+    display: flex;
+    justify-content: center;    
+    margin-bottom: 10px;
+}
+textarea{
+    margin-bottom: 10px;
+}
+.comment{
+    width: 91%;
+    padding: 10px;
+    border: solid 0.5px;
+    border-radius: 10px;
+}
+.date{
+    text-align: end;
+}
+.leaveСomment{
+    display: flex;
+    justify-content: center;
+}
+.leaveСomment>div{
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+}
+.close{
+    background: none;
+    border: none;
+    background-image: url('../assets/img/closecircle_120264.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+}

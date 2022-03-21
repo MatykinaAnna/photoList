@@ -1,0 +1,18 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+.container_gray{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(80, 79, 79);
+}
+.galery{
+    display: flex;
+    flex-wrap: wrap;
+}
+.photo{
+    margin: 5px;
+
+}
